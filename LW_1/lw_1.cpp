@@ -2,46 +2,44 @@
 using namespace std;
 
 class cone {
-    float radius;
+    float radius;   // private variables
     float height;
     float result;
 
     public:
-    cone(); // конструктор без параметрів
-    cone(float radius, float height); // конструктор з параметрами
-    ~cone(); // деструктор
+    cone(); // Constructor without parameters
+    cone(float radius, float height); // Constructor with parameters
+    ~cone(); // Destructor
     void Set(float radius, float height);
     void Calc();
     void Print_val();
 };
 
-void cone::Calc(){
-    result = (radius * radius * height * 3.14 * 0.33333);
-    cout << "\nVolume = \t" << result << endl;
-}
-
-
-
 cone::cone (){
     radius = height = 0;
-    cout << "Конструктор без параметрів\n"<<endl;
+    cout << "Constructor without parameters\n"<<endl;
 }
 
 cone::cone (float r, float h){
     radius = r;
     height = h;
     result = 0;
-    cout << "\nКонструктор з параметрами\t" << r << "\t" << h << endl;
+    cout << "\nConstructor with parameters\t" << r << "\t" << h << endl;
 }
 
 cone::~cone (){
-    cout << "\nДеструктор"<<endl;
+    cout << "\nDestructor"<<endl;
 }
 
 void cone::Set(float r, float h)
 {
     radius = r;
     height = h;
+}
+
+void cone::Calc(){
+    result = (radius * radius * height * 3.14 * 0.33333);
+    cout << "\nVolume = \t" << result << endl;
 }
 
 void cone::Print_val()
@@ -53,9 +51,10 @@ void cone::Print_val()
 
 int main(){
     if(true){
-        cone a;
+        cone a;             // конструктор без параметрів      
+        // cone a(1.2, 3)   // конструктор з параметрами
 
-        a.Set(1.5, 3);
+        a.Set(1.5, 3);      // виклик функції SET
         a.Calc();
         a.Print_val();
     }
