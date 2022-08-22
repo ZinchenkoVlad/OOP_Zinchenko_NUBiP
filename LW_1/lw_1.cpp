@@ -51,8 +51,13 @@ void cone::Print_val()
 
 int main(){
     if(true){
-        cone a;             // конструктор без параметрів      
-        // cone a(1.2, 3)   // конструктор з параметрами
+        cone a;             // Constructor without parameters static
+        // cone a(1.2, 3)   // Constructor with parameters static
+
+        // cone *P = new cone[2];   // dynamic
+        // P->Set(19, 50.9);
+        // (P + 1)->Set(18, 25.5);
+
 
         a.Set(1.5, 3);      // виклик функції SET
         a.Calc();
