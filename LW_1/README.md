@@ -18,7 +18,7 @@ d) функція print_val () виводить на екран значення
 
 ---
 
-![Screenshot](1.png)
+![Screenshot 2022-08-23 092637](https://user-images.githubusercontent.com/75172188/186086516-2effc9db-3374-44eb-b234-08dc8f2c0c04.png)
 
 ---
 ### Контрольні запитання
