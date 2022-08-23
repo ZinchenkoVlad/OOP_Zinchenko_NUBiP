@@ -51,10 +51,12 @@ void count(Array &obj) { // friend func
   cout << "\n Count = " << sum << endl;
 }
 
+
 int main(void) {
+  //
   if (true) {
     Array a(12);
-    count(a);
+    count(a); 
   }
 
   return 0;
