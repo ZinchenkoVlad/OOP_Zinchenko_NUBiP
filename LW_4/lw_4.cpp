@@ -10,8 +10,7 @@ public:
   Array(int lenght); // Constructor
   ~Array();          // Destructor
   void Show();
-  friend void count(Array &obj); // friend  func which have permit to read
-                                 // private vals in class Array
+  friend void count(Array &obj); // friend  func which have permit to read private vals in class Array
 };
 
 Array::Array(int temp) {
@@ -24,12 +23,13 @@ Array::Array(int temp) {
       array[i] = i;
     }
   }
-  cout << "\nelement: " << array << "\n";
+  cout << "\nelement1: " << array << "\n";
   Show();
 }
 
 Array::~Array() {
   delete[] array; // free memory
+  cout << "destructor \t" << array <<  endl;
 }
 
 void Array::Show() {
