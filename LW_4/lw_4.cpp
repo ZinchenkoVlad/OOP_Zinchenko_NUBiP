@@ -9,7 +9,7 @@ private:
 public:
   Array(int lenght); // Constructor
   ~Array();          // Destructor
-  void Show();
+  void show();
   friend void count(Array &obj); // friend  func which have permit to read private vals in class Array
 };
 
@@ -24,7 +24,7 @@ Array::Array(int temp) {
     }
   }
   cout << "\nelement1: " << array << "\n";
-  Show();
+  show();
 }
 
 Array::~Array() {
@@ -32,7 +32,7 @@ Array::~Array() {
   cout << "destructor \t" << array <<  endl;
 }
 
-void Array::Show() {
+void Array::show() {
   for (int i = 0; i < lenght; i++) {
     cout << array[i] << endl;
   }
@@ -53,11 +53,9 @@ void count(Array &obj) { // friend func
 
 
 int main(void) {
-  //
-  if (true) {
+
     Array a(12);
     count(a); 
-  }
 
-  return 0;
+return 0;
 }
