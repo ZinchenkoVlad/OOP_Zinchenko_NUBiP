@@ -1,66 +1,89 @@
 #include <iostream>
 using namespace std;
 
-class cone {
+class Cone {
     float radius;   // private variables
     float height;
     float result;
 
     public:
-    cone(); // Constructor without parameters
-    cone(float radius, float height); // Constructor with parameters
-    ~cone(); // Destructor
-    void Set(float radius, float height);
-    void Calc();
-    void Print_val();
+    Cone(); // Constructor without parameters
+    Cone(float radius, float height); // Constructor with parameters
+    ~Cone(); // Destructor
+
+    void setHeight(float height);
+    void setRadius(float radius);
+    
+    void calc();
+    void getRadius();
+    void getHeight();
+    void getVolume();
 };
 
-cone::cone (){
+Cone::Cone (){
     radius = height = 0;
     cout << "Constructor without parameters\n"<<endl;
 }
 
-cone::cone (float r, float h){
+Cone::Cone (float r, float h){
     radius = r;
     height = h;
     result = 0;
     cout << "\nConstructor with parameters\t" << r << "\t" << h << endl;
 }
 
-cone::~cone (){
+Cone::~Cone (){
     cout << "\nDestructor"<<endl;
 }
 
-void cone::Set(float r, float h)
+void Cone::setHeight(float h)
 {
-    radius = r;
     height = h;
 }
 
-void cone::Calc(){
-    result = (radius * radius * height * 3.14 * 0.33333);
-    cout << "\nVolume = \t" << result << endl;
+void Cone::setRadius(float r)
+{
+    radius = r;
 }
 
-void cone::Print_val()
+void Cone::calc(){
+    result = (radius * radius * height * 3.14 * 0.33333);
+}
+
+
+void Cone::getRadius()
 {
-    cout << "\nRadius\t" << radius << "\tHeight\t" << height << "\tvolume\t" << result << endl;
+    cout << "\nRadius\t" << radius << endl;
+}
+
+void Cone::getHeight()
+{
+    cout << "\nHeight\t" << height << endl;
+}
+
+void Cone::getVolume()
+{
+    cout << "\nVolume\t" << result << endl;
 }
 
 
 
 int main(){
-    if(true){
-        cone a;             // Constructor without parameters static
-        // cone a(1.2, 3)   // Constructor with parameters static
+    
+    Cone a;             // Constructor without parameters static
+    // cone a(1.2, 3)   // Constructor with parameters static
 
-        // cone *P = new cone[2];   // dynamic
-        // P->Set(19, 50.9);
-        // (P + 1)->Set(18, 25.5);
+    // cone *P = new cone[2];   // dynamic
+    // P->Set(19, 50.9);
+    // (P + 1)->Set(18, 25.5);
 
 
-        a.Set(1.5, 3);      // виклик функції SET
-        a.Calc();
-        a.Print_val();
-    }
+    a.setHeight(3);
+    a.setRadius(1.5);
+
+    a.calc();
+
+    a.getHeight();
+    a.getRadius();
+    a.getVolume();
 }
