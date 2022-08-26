@@ -80,20 +80,9 @@ ostream &operator<<(ostream &t, Cone &obj)
 	obj.calc();
 
 	t << "\nRadius\t" << obj.radius << "\nHeigth\t" << obj.heigth << "\nVolume\t" << obj.result;
-	// if (obj.imag < 0)
-	// 	t << obj.real << " - i" << -(obj.imag);
-	// else
-	// 	t << obj.real << " + i" << obj.imag;
 	return t;
 }
 
-// Cone Cone ::operator<<()
-// {
-// 	calc();
-// 	cout << "\nRadius\t" << radius << endl;
-// 	cout << "\nHeigth\t" << heigth << endl;
-// 	cout << "\nVolume\t" << result << endl;
-// }
 
 Cone Cone ::operator+(Cone &op2)
 {
@@ -105,10 +94,10 @@ Cone Cone ::operator+(Cone &op2)
 
 Cone Cone ::operator++(int notused)
 {
-	Cone temp = *this; // збереження вихiдного значення
-	radius++;		   // iнкремент дiйсної частини
-	heigth++;		   // iнкремент уявної частини
-	return temp;	   // повернення початкового значення
+	Cone temp = *this;
+	radius++;
+	heigth++;
+	return temp;
 }
 
 int main()
@@ -120,7 +109,7 @@ int main()
 	Cone c;
 
 	cout << "-------------------------------------" << endl;
-	c = a + b; // додавання об'єктів а й b
+	c = a + b;
 
 	cout << "c = a+b" << endl;
 	c.getHeight();
