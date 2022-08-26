@@ -18,5 +18,11 @@
 5. організація, страхова компанія, будівна компанія, метробуд;
 ---
 
-![image](https://user-images.githubusercontent.com/75172188/186832346-53ed0e32-a5a9-44a7-8f4d-08ccbfecd01c.png)
+Діаграма класів:
+
+![image](https://user-images.githubusercontent.com/75172188/186857645-decb066c-fc9a-423b-8a3a-8e46c0476c68.png)
+
+---
+
+Результат виконання:
 
