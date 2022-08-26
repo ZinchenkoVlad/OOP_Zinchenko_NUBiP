@@ -24,5 +24,5 @@ g) операція «++» збільшує радіус і висоту кон�
 
 ---
 
-![image](https://user-images.githubusercontent.com/75172188/186700768-424c655d-bf49-458e-be29-53ec30cffc64.png)
+![image](https://user-images.githubusercontent.com/75172188/186832346-53ed0e32-a5a9-44a7-8f4d-08ccbfecd01c.png)
 
