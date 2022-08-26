@@ -26,3 +26,4 @@
 
 Результат виконання:
 
+![image](https://user-images.githubusercontent.com/75172188/186882077-921dc045-3455-4043-8bce-bcd9cd16f8f7.png)
