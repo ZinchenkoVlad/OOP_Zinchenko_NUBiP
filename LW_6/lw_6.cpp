@@ -2,37 +2,69 @@
 #include <conio.h>
 using namespace std;
 
-// Пpиклaд викopистaння дeкiлькox бaзoвиx клaсiв.
-class base1
+class Organisation
 {
-protected:
-	int x;
+
+	string name;
+	string adress;
 
 public:
-	void showx() { cout << x << ""; }
+	void setName(string temp) { name = temp; }
+	void getName() { cout << "organisation name\t" << name << endl; }
 };
-class base2
+
+class InsuranceCompany : public Organisation
 {
-protected:
-	int y;
+	string name2;
 
 public:
-	void showy() { cout << y << ""; }
+	InsuranceCompany(string temp) { name2 = temp; };
+	~InsuranceCompany(){};
+	void getName2() { cout << "insurcomp name2\t\t" << name2 << endl; }
 };
-// Спaдкyвaння двox бaзoвиx клaсiв.
-class derived : public base1, public base2
+
+class ConstructionCompany : public Organisation
 {
+protected:
+	int projectsAtAll;
+
 public:
-	void set(int i, int j)
-	{
-		x = i;
-		y = j;
-	}
+	void setProjects(int temp) { projectsAtAll = temp; }
+	void getProjects() { cout << "projects at all\t\t" << projectsAtAll << endl; }
 };
+
+class MetroBuilding : public ConstructionCompany
+{
+protected:
+	int justVariable;
+
+public:
+	MetroBuilding(int temp) { justVariable = temp; };
+	~MetroBuilding(){};
+	void setJustVariable(int temp) { justVariable = temp; }
+	void getJustVariable() { cout << "justVariable\t\t" << justVariable << endl; }
+};
+
 int main()
 {
-	derived ob;
-	ob.set(10, 20); // члeн клaсy derived
-	ob.showx();		// фyнкцiя з клaсy base1
-	ob.showy();		// фyнкцiя з клaсy base2
+	cout << "-------------------------------------" << endl;
+	cout << "Creating Insurance Company\n"<< endl;
+
+	InsuranceCompany a("Olegovich");
+	a.setName("Aligator");
+	a.getName();
+	a.getName2();
+
+	cout << "\n-------------------------------------" << endl;
+	cout << "Creating MetroBuilding\n"<< endl;
+
+	MetroBuilding b(205);
+	b.setName("OOP_METRO_BUILD");
+	b.setProjects(15);
+
+	b.getName();
+	b.getProjects();
+	b.getJustVariable();
+	cout << "-------------------------------------" << endl;
+
 }
