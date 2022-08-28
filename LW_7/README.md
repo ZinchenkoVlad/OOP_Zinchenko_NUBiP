@@ -12,4 +12,4 @@
 
 Результат виконання:
 
-![image](https://user-images.githubusercontent.com/75172188/186882077-921dc045-3455-4043-8bce-bcd9cd16f8f7.png)
+![image](https://user-images.githubusercontent.com/75172188/187083604-8a1c317a-6803-4f48-aa44-20215f3cfddd.png)
