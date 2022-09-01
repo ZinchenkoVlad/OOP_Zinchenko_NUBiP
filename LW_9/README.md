@@ -21,6 +21,10 @@
 1», «більш за 10». Назви діапазонів для результату: «негативне»,
 «позитивне».
 
+![image](https://user-images.githubusercontent.com/75172188/187921219-7f8699bc-312d-4f76-b6c2-489e1697e1c9.png)
+
+![image](https://user-images.githubusercontent.com/75172188/187921518-03f1fb96-9332-46be-83b8-a46cabd8c49e.png)
+
 
 ---
 
@@ -35,6 +39,8 @@
 вершки т 3 кг по 4,10 грн/кг.
 
 Визначити суми, необхідні для закупівлі окремих продуктів і загальну суму.
+
+![image](https://user-images.githubusercontent.com/75172188/187921627-b774b0f6-bf27-4c3d-a5fc-062306e66d46.png)
 
 ---
 
