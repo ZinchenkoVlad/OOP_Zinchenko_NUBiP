@@ -18,3 +18,15 @@
 
 - операція «*» перевантажена: обчислює скалярний добуток двох векторів, і
 створює новий вектор при множенні вектора і скаляра.
+
+---
+
+Нормований вектор
+
+![image](https://user-images.githubusercontent.com/75172188/187998345-a88b3028-3cdc-4978-acdd-5078d7d7d778.png)
+
+![image](https://user-images.githubusercontent.com/75172188/187998412-e4505db2-7b2e-46b3-ac4a-3aca857a01e0.png)
+
+---
+
+![image](https://user-images.githubusercontent.com/75172188/187998530-77e3e4fa-3d85-4eb9-a17a-408a15815cce.png)
