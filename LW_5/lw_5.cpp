@@ -1,5 +1,4 @@
 #include <iostream>
-#include <conio.h>
 using namespace std;
 
 class Cone
@@ -67,7 +66,7 @@ void Cone::getRadius()
 
 void Cone::getHeight()
 {
-	cout << "\nHeight\t" << heigth << endl;
+	cout << "\nHeigth\t" << heigth << endl;
 }
 
 void Cone::getVolume()

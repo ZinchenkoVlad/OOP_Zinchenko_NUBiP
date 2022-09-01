@@ -2,3 +2,9 @@
 /*.exe
 *.exe
 .vscode
+.vs
+**/.vs
+**/bin
+**/obj
+**/*.csproj
+**/*.sln
